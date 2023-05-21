@@ -39,6 +39,7 @@ if PY3:
 
 #     from collections import OrderedDict as DictMixin 
     from collections.abc import MutableMapping as DictMixin
+    from collections import OrderedDict
 
     def decode(x):
         return x.decode()
