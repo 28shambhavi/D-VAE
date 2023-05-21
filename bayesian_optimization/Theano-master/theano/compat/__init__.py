@@ -37,7 +37,8 @@ if PY3:
             return unbound.__func__
         return unbound
 
-    from collections import OrderedDict, MutableMapping as DictMixin
+#     from collections import OrderedDict as DictMixin 
+    from collections.abc import MutableMapping as DictMixin
 
     def decode(x):
         return x.decode()
